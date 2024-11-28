@@ -1,0 +1,56 @@
+*{
+    background-color: rgb(3, 82, 82);
+    font-family: sans-serif;
+}
+
+h1, h2{
+    color: #f9f9f9;
+    text-shadow: 2px 2px 6px black;
+    text-align: center;
+}
+div{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    box-shadow: 2px 2px 6px black;
+    
+}
+
+.color-title{
+    font-weight: normal;
+}
+
+#red{
+    color:red;
+}
+
+#blue{
+    color: #1BA8F0;
+}
+
+#orange{
+    color:orange;
+}
+
+#green{
+    color:green;
+}
+
+#yellow{
+    color: yellow;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
