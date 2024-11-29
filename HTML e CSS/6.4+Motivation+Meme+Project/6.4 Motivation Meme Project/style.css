@@ -1,0 +1,43 @@
+body{
+    font-family: "Parkinsans", sans-serif;
+    background-color: black;
+    color: white;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    width: 50%;
+    height: 100%;
+    margin-left: 25%;
+}
+
+#content-foto{
+    width: 100%;
+    border: 5px solid white;
+    border-radius: 5px;
+}
+
+#content-titulo{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 64px;
+}
+
+#content-p a{
+    text-decoration: none;
+    color: white;
+}
+
+
+#content-p a:hover{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border: 4px solid white;
+    border-radius: 10px;
+}
+
