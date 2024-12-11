@@ -1,0 +1,85 @@
+html{
+    background-color: black;
+}
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/pexels-pixabay-355887.jpg);
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 1020px;
+    width: 100%; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.section1-title{
+    color: white;
+    font-family: sans-serif;
+    font-size: 5rem;
+    font-weight: bolder;
+    text-shadow: 0px 6px 10px black;
+}
+.section1-p{
+    color: white;
+    font-family: sans-serif;
+    font-size: 2rem;
+    text-shadow: 0px 6px 10px black;
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    color: white;
+    font-family: sans-serif;
+
+}
+
+
+.section2 img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.skills{
+    background-color: black;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-div1{
+    display: inline-flex;
+    flex-grow: 1;
+    flex-direction: row;
+    gap: 10px;
+    margin: 10px;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    align-content: center;
+    padding: 10px;
+}
+
+.skills h2{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.section2-title{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+
