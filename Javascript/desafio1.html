@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora do Amor</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #FEBCD3;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Lucida Sans', sans-serif;
+            font-weight: bolder;
+        }
+        h1{
+            margin-bottom: 10px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        p{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        input{
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        input[type="submit"]{
+            background-color: #FD70A1;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .input3:hover{
+            background-color: #70b9fd;
+        }
+        input[type="text"]{
+            text-align: left;
+            color: #000000;
+            font-size: 15px;
+        }
+        #resultado {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #ff0055;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora do Amor</h1>
+    <p>Vamos descobrir qual é a sua porcentagem de amor?</p>
+    <div>
+        <input type="text" id="input1" placeholder="Seu nome" class="input1">
+        <span style='font-size:50px;'>&#10084;</span>
+        <input type="text" id="input2" placeholder="Nome do seu amor" class="input2">
+        <input type="submit" value="Calcular" class="input3">
+    </div>
+    <h2>A porcentagem de amor é:</h2>
+    <p id="resultado">--%</p>
+
+    <script>
+        const input1 = document.querySelector('.input1');
+        const input2 = document.querySelector('.input2');
+        const input3 = document.querySelector('.input3');
+        const resultado = document.getElementById('resultado');
+
+        input3.addEventListener('click', () => {
+            const nome1 = input1.value.trim();
+            const nome2 = input2.value.trim();
+
+            if (nome1 === "" || nome2 === "") {
+                resultado.textContent = "Por favor, preencha os dois nomes!";
+                return;
+            }
+
+            const porcentagem = Math.random() * 100;
+            resultado.textContent = `${porcentagem.toFixed(2)}%`;
+        });
+    </script>
+</body>
+</html>
